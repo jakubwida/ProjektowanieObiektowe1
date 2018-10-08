@@ -1,8 +1,8 @@
 package main;
 
-public class Delta {
+class Delta {
 
-    public void delta(double a, double b, double c) {
+    void delta(double a, double b, double c) {
         double delta;
         if(a == 0){
             System.out.println("Not a quadratic equation!");

@@ -7,4 +7,5 @@ public class Main {
         ConsoleUserInterface cu = new ConsoleUserInterface();
         cu.run();
     }
+
 }
