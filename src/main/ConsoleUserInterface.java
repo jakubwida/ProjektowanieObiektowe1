@@ -5,13 +5,14 @@ import java.util.Scanner;
 
 public class ConsoleUserInterface {
     Scanner sc =new Scanner(System.in);
+    Delta d = new Delta();
 
     public void run(){
 
-        Double a = getNumber("a");
-        Double b = getNumber("b");
-        Double c = getNumber("c");
-
+        double a = getNumber("a");
+        double b = getNumber("b");
+        double c = getNumber("c");
+        d.delta(a,b,c);
 
     }
 
