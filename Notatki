@@ -1,0 +1,73 @@
+Dzisiaj - projekt.
+
+> Informacje są na pegazie - specyfikacja.
+
+	>robimy projekt hotelu.
+	>aplikacja ma nim zarządzać
+
+	>mają być pokoje o różnej liczbie osób
+	>ma to umożliwiać rejestrację userowi, rezerwację hotelu, i inne takie akcje.
+	>generalnie ma to uważąc na zajęte pokoje itp.
+	>cena łóżka w pokojach wieloosobowych jest różna. No generalnie takie tam.
+
+	>osoba musi mieć możliwość rejestracji jako jedna osoba do wieloosobowego i dostaje wtedy taniej, pod awrunkeim że ktoś inny też jest tam. Chyba.
+	>ceny osób dla grupy muszą rozkładać się równomiernie, bez względu na ich rozkład w pokojach.
+
+	>interfejs administracji musi mieć możliwość dodawania i usuwania pokojów, ustawiania ich jako czynnych itp.
+	>admin może administrować ludzi na pokoje (jako np. recepcjonista)
+
+	>rezerwację do jakiejś daty można odwołać, tam może system zaliczek, kar.
+
+	>samo wyszukiwanie rezerwacji musi się odbywać przez w miare rozbudowany sytem.
+		>generalnie trzeba widzieć wszystkie pokoje wieloosobowe.
+
+	>stali klienci dostają rabaty. Sami je sobie definiujemy, ale musi być system klientów stałych i mają oni dostawać rabaty.
+		>rabaty maja zależeć od tego ile razy odwiedzają hotel.
+
+	>cena pokoju musi zależeć od sezonu, i musi móc być zmieniana przez administrację.
+		>może dojść do sytuacji w której w czasie zwiększamy cenę jednorazowo w czasie, nie poeriodykalnie.
+
+	>klient musi mieć możliwość widzenia swoich rejestracji.
+		>jeśli w teorii klient konta nie ma to musi też mieć możliwość patrzenia na swoje rejestracje, np przez kod or recepcjonistach.
+
+	>Można użyć bazy danych.
+
+	>trzeba mieć osobne konta dla recepcjonistów + konta dla adminów systemu.
+
+	>wcześniejsze rezerwacje muszą dawać zniżki
+
+	>może być GUI, może być web apka, ale może być nawet na commandline
+		-może być zupełnie lokalnie ale musi supportować logowanie itp.
+
+	>dokumentacja jest wymagana:
+		-tutorial użytkowania (np. help w gui + mały pdf + kilka gotowych kont)
+		-javadoc, przynajmniej na interfejs zewnętrzny
+
+
+> do kiedy?
+	do końca listopada.
+
+>wzorce projektowe
+	- przynajmniej jeden musi być zastowany.
+	-np singletony, factory, buildery
+	- jeden z omawianych, albo poza tym - ale musi być użyty i zrozumiany.
+
+>inne wymagania:
+	-oddać kod źródłowy + plik .jar
+	-można użyć bibliotek, ale muszą być niekomercyjne.
+	-trzeba to wszystko obłożyć testami jednostkowymi po szyję.
+		-tak minimum 1 na metodę.
+	-trzeba w miarę regularnie commitować.
+
+
+
+Wnioski w grupie:
+
+> Baza danych: SQLITE/inna klasyczna
+	> hyberante - ORM do javy
+	> JPA java persistance api - do wyszukiwania
+
+> GUI: brak, command line
+	-z loginem
+	-różne interfejsy dla ról
+	-nie trzeba wielodostępu
